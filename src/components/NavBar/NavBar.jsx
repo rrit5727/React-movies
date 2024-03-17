@@ -8,7 +8,7 @@ const NavBar = ({user}) => {
             |
             <Link to="/actors"> Actors List </Link> 
             |           
-            <p1> Username: {user}</p1>
+            <h2> Username: {user}</h2>
         </nav>
     );
 }

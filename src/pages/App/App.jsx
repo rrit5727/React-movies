@@ -5,7 +5,7 @@ import './App.css';
 import LoginPage from "../LoginPage/LoginPage"
 import MoviesListPage from '../MoviesListPage/MoviesListPage';
 import MovieDetailPage from '../MoviesDetailPage/MoviesDetailPage';
-import ActorsListPage from '../ActorListPage/ActorListPage';
+import ActorListPage from '../ActorListPage/ActorListPage';
 import NavBar from '../../components/NavBar/NavBar';
 import {movies} from "../../data.js"
 
@@ -26,7 +26,7 @@ function App() {
           <Routes>                          
             <Route path="/" element={<MoviesListPage movies={movies}/>}/>              
             <Route path="movies/:movieName" element={<MovieDetailPage/>}/>              
-            <Route path="/actors" element={<ActorsListPage/>}/>          
+            <Route path="/actors" element={<ActorListPage movies={movies}/>}/>          
             
           </Routes>          
         </>
